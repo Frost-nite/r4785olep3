@@ -1,0 +1,50 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucid RP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js">
+        <div class="btext"> 
+            <h1>Lucid RP</h1> Serious RP
+            <p></p>#1 Arab Server</p>
+            <a href="https://discord.gg/jk" class="btn">Discord
+			<br><a href="http://lucid-life.tebex.io/" class="btn">Store
+</a>
+        </div>
+    </div>
+
+    <audio id="leson" src="music/music.ogg" autoplay="true" hidden="true" loop="true"/>
+	<script>
+	
+    var play = true;
+    var myAudio = document.getElementById("leson");
+    
+    myAudio.volume = 0.1;
+	
+	
+    function onKeyDown(event) {
+            switch (event.keyCode) {
+                case 32: //SpaceBar                    
+                    if (play) {
+                        myAudio.pause();
+                        play = false;
+                    } else {
+                        myAudio.play();
+                        play = true;
+                    }
+                    break;
+            }
+      return false;
+    }
+    window.addEventListener("keydown", onKeyDown, false);
+    </script>
+
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
